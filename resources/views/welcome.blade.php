@@ -6,94 +6,168 @@
 
         <title>Laravel</title>
 
-        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+        <header>
+            <nav>
+                <a href="">Inicio</a>
+                <a href="">Acerca de</a>
+                <a href="">Portafolio</a>
+                <a href="">Servicios</a>
+                <a href="">Contacto</a>
+            </nav>
+            <section class="textos-header">
+                <h1>Aqui esta el contenido</h1>
+                <h2>Sport la GOMITA</h2>
+            </section>
+            <div class="holaa" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-4.22,54.77 C262.69,157.39 235.04,-24.17 504.79,69.56 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+        </header>
+        <main>
+            <section class="contenedor sobre-nosotros">
+                <h2 class="titulo">
+                    Nuestro producto
+                </h2>
+                <div class="contenedor-sobre-nosotros">
+                    <img src="img/developer.svg" alt="" class="imagen-developer">
+                    <div class="contenido-textos">
+                        <h3><span>1</span> Los mejores productos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vero, perspiciatis doloribus totam beatae provident quo natus consequuntur autem facilis! Sit eius deleniti dicta veritatis quam accusantium nemo modi qui!</p>
+
+                        <h3><span>2</span> Los mejores productos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vero, perspiciatis doloribus totam beatae provident quo natus consequuntur autem facilis! Sit eius deleniti dicta veritatis quam accusantium nemo modi qui!</p>
+
+                        <h3><span>3</span> Los mejores productos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vero, perspiciatis doloribus totam beatae provident quo natus consequuntur autem facilis! Sit eius deleniti dicta veritatis quam accusantium nemo modi qui!</p>
+                    </div>
                 </div>
-            @endif
+            </section>
+            <section class="portafolio">
+                <div class="contenedor">
+                    <h2 class="titulo">Portafolio</h2>
+                    <div class="galeria-port">
+                        <div class="imagen-port">
+                            <img src="img/img1.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img2.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img3.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img4.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img5.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img6.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img7.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img/img8.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/icono1.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                    </div>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+            </section>
+            <section class="clientes contenedor">
+                <h2 class="titulo">Que dicen nuestro clientes</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/face1.jpg" alt="">
+                        <div class="contenido-textos-card">
+                            <h4>Jorge Peralta</h4>
+                            <p>Lorem ipsum laboriosam, repellat odit voluptatem ipsum laboriosam, repellat odit voluptatem!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/face2.jpg" alt="">
+                        <div class="contenido-textos-card">
+                            <h4>Silvana marquina</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur  ipsum laboriosam, repellat odit volupt atemvo luptatem!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-services">
+                <div class="contenedor">
+                    <h2 class="titulo">Nuestros servicios</h2>
+                    <div class="servicio-cont">
+                        <div class="servicio-ind">
+                            <img src="img/ilustracion1.svg" alt="">
+                            <h3>Marcos andia</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quisquam iu e officia quibusdam provident perspiciatis, deserunt similique! Sapiente, corporis.</p>
+                        </div>
+                        <div class="servicio-ind">
+                            <img src="img/ilustracion2.svg" alt="">
+                            <h3>Marcos andia</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quisquam iusto officia quibusdam provident perspiciatis, deserunt similique! Sapiente, corporis.</p>
+                        </div>
+                        <div class="servicio-ind">
+                            <img src="img/ilustracion3.svg" alt="">
+                            <h3>Marcos andia</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quisquam iust officia quibusdam provident perspiciatis, deserunt similique! Sapiente, corporis.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="content-foo">
+                    <h4>Teléfono</h4>
+                    <p>312685161</p>
+                </div>
+                <div class="content-foo">
+                    <h4>E-mail</h4>
+                    <p>jorge@gmail.com</p>
+                </div>
+                <div class="content-foo">
+                    <h4>Dirección</h4>
+                    <p>312685161</p>
                 </div>
             </div>
-        </div>
+            <h2 class="titulo-final">&copy; Jorge Peralta | UATF </h2>
+        </footer>
     </body>
 </html>
