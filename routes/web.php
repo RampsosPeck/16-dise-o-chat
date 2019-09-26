@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+/*
+Route::get('redirect', function(){
+	//alert()->error('Success Message', 'Optional Title');
+	return redirect('/home')->with('success', 'Profile updated!');
+});
+*/

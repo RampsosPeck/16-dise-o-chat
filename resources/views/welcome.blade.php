@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -6,13 +6,21 @@
 
         <title>Laravel</title>
 
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+
+        <script src="{{ asset('js/app.js') }}" defer></script>
+
+        <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     </head>
     <body>
-
+    <div id="app">
         <header>
             <nav>
                 <a href="">Inicio</a>
@@ -20,10 +28,24 @@
                 <a href="">Portafolio</a>
                 <a href="">Servicios</a>
                 <a href="">Contacto</a>
+                @if (Route::has('login'))
+
+                        @auth
+                            <a href="{{ url('/home') }}">ESCRITORIO</a>
+                        @else
+                            <a href="{{ route('login') }}">INGRESAR</a>
+
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}">REGISTRARSE</a>
+                            @endif
+                        @endauth
+
+                @endif
             </nav>
             <section class="textos-header">
-                <h1>Aqui esta el contenido</h1>
-                <h2>Sport la GOMITA</h2>
+
+                     @yield('content')
+
             </section>
             <div class="holaa" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-4.22,54.77 C262.69,157.39 235.04,-24.17 504.79,69.56 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
         </header>
@@ -169,5 +191,6 @@
             </div>
             <h2 class="titulo-final">&copy; Jorge Peralta | UATF </h2>
         </footer>
+        </div>
     </body>
 </html>
